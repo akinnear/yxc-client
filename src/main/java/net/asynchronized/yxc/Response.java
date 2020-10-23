@@ -6,12 +6,18 @@
 package net.asynchronized.yxc;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  *
  * @author enrico
  * 
  */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Response {
     public static final int SUCCESS = 0;
     public static final int INITIALIZING = 1;
@@ -122,14 +128,6 @@ public class Response {
     
     @JsonProperty("response_code")
     private Integer responseCode;
-
-    public Integer getResponseCode() {
-        return responseCode;
-    }
-
-    public void setResponseCode(Integer responseCode) {
-        this.responseCode = responseCode;
-    }
 
     @Override
     public String toString() {
