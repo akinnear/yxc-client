@@ -49,7 +49,7 @@ public class DistributionFacade extends AbstractFacade {
      * For setting Link distributed clients. If a Device is already setup as Link distribution server, this
      * client setup is denied by that Device: use this API after canceling a Device’s Link distribution
      * server setup using setServerInfo, then confirming that the target Device’s role is changed to other
-     * values than “server” using getDistributionInfo.
+     * values than "server" using getDistributionInfo.
      * 
      * @param info
      * @return

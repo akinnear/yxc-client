@@ -132,8 +132,8 @@ public class ZoneFacade extends AbstractFacade {
 
     /**
      * Let a Device do necessary process before changing input in a specific
-     * zone. This is valid only when “prepare_input_change” exists in
-     * “func_list” found in /system/getFuncStatus. MusicCast CONTROLLER executes
+     * zone. This is valid only when "prepare_input_change" exists in
+     * "func_list" found in /system/getFuncStatus. MusicCast CONTROLLER executes
      * this API when an input icon is selected in a Room, right before sending
      * various APIs (of retrieving list information etc.) regarding selecting
      * input

@@ -5,24 +5,18 @@ import net.asynchronized.yxc.zone.Status;
 import net.asynchronized.yxc.zone.Zone;
 
 public class YxcClientDemo {
-    private static final String WOHNZIMMER = "192.168.178.39";
-
-    private YxcClient client;
-
-    public YxcClientDemo() {
-        client = new YxcClient(WOHNZIMMER, Zone.MAIN);
-    }
 
     /**
      * @param args the command line arguments
-     * @throws java.io.IOException
+     * @throws java.io.IOException Throws error if client has issues
      */
     public static void main(String[] args) throws IOException {
-        YxcClientDemo demo = new YxcClientDemo();
-        demo.checkStatus();
-    }
+        if (args.length == 0) {
+            System.err.println("To run provide host");
+            return;
+        }
 
-    private void checkStatus() throws IOException {
+        YxcClient client = new YxcClient(args[0], Zone.MAIN);
         Status status = client.getStatus();
         System.out.println(status);
     }

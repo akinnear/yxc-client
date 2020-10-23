@@ -93,7 +93,7 @@ public class TunerFacade extends AbstractFacade {
     /**
      * For selecting Tuner preset. Call this API after change the target zone’s
      * input to Tuner. It is possible to change Band in case of preset type is
-     * “common”. In case of preset type is “separate”, need to change the target
+     * "common". In case of preset type is "separate", need to change the target
      * Band before calling this API. This API is available on and after API
      * Version 1.17.
      *

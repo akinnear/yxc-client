@@ -139,7 +139,7 @@ public class NetworkUsbFacade extends AbstractFacade {
      * deeper layer than the current layer where the element specified by the
      * index belongs to. "play" is to start playback current index element,
      * "return" is to go back one upper layer than current. "select" and "play"
-     * needs to specify an index at the same time. In case to “select” an
+     * needs to specify an index at the same time. In case to "select" an
      * element with its attribute being "Capable of Yamaha Extended Control API
      * Specification (Basic) Copyright  2016 Yamaha Corporation, ALL rights
      * reserved. Page 38 of 61 Search", specify search text using
@@ -162,7 +162,7 @@ public class NetworkUsbFacade extends AbstractFacade {
 
     /**
      * For setting search text. Specifies string executing this API before
-     * select an element with its attribute being “Capable of Search” or
+     * select an element with its attribute being "Capable of Search" or
      * retrieve info about searching list(Pandora).
      *
      * @param s List ID (All: "main", Pandora: "auto_complete", "search_artist",

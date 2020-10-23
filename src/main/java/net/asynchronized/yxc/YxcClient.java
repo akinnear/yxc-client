@@ -88,7 +88,7 @@ public class YxcClient {
     /**
      * For retrieving setup/information of overall system function. Parameters
      * are readable only when corresponding functions are available in
-     * “func_list” of /system/getFeatures
+     * "func_list" of /system/getFeatures
      *
      * @return FuncStatus
      * @throws IOException
@@ -214,8 +214,8 @@ public class YxcClient {
 
     /**
      * Let a Device do necessary process before changing input in a specific
-     * zone. This is valid only when “prepare_input_change” exists in
-     * “func_list” found in /system/getFuncStatus. MusicCast CONTROLLER executes
+     * zone. This is valid only when "prepare_input_change" exists in
+     * "func_list" found in /system/getFuncStatus. MusicCast CONTROLLER executes
      * this API when an input icon is selected in a Room, right before sending
      * various APIs (of retrieving list information etc.) regarding selecting
      * input
@@ -294,7 +294,7 @@ public class YxcClient {
     /**
      * For selecting Tuner preset. Call this API after change the target zone’s
      * input to Tuner. It is possible to change Band in case of preset type is
-     * “common”. In case of preset type is “separate”, need to change the target
+     * "common". In case of preset type is "separate", need to change the target
      * Band before calling this API. This API is available on and after API
      * Version 1.17.
      *
@@ -434,7 +434,7 @@ public class YxcClient {
      * deeper layer than the current layer where the element specified by the
      * index belongs to. "play" is to start playback current index element,
      * "return" is to go back one upper layer than current. "select" and "play"
-     * needs to specify an index at the same time. In case to “select” an
+     * needs to specify an index at the same time. In case to "select" an
      * element with its attribute being "Capable of Yamaha Extended Control API
      * Specification (Basic) Copyright  2016 Yamaha Corporation, ALL rights
      * reserved. Page 38 of 61 Search", specify search text using
@@ -456,7 +456,7 @@ public class YxcClient {
     
     /**
      * For setting search text. Specifies string executing this API before
-     * select an element with its attribute being “Capable of Search” or
+     * select an element with its attribute being "Capable of Search" or
      * retrieve info about searching list(Pandora).
      *
      * @param s List ID (All: "main", Pandora: "auto_complete", "search_artist",

@@ -63,7 +63,7 @@ public class SystemFacade extends AbstractFacade {
     /**
      * For retrieving setup/information of overall system function. Parameters
      * are readable only when corresponding functions are available in
-     * “func_list” of /system/getFeatures
+     * "func_list" of /system/getFeatures
      *
      * @return FuncStatus
      * @throws IOException
